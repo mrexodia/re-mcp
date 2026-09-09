@@ -308,7 +308,7 @@ The default limit is 100 for most tools. Some tools use smaller defaults: 50 for
 | `resources.py` | MCP resources — read-only, cacheable context endpoints (static binary data + aggregate statistics) |
 | `prompts/` | MCP prompt templates for guided analysis workflows (analysis, security, workflow) |
 | `__init__.py` | Lazy `bootstrap()` to initialize idapro, plus `find_ida_dir()` for IDA installation discovery |
-| `_cli.py` | Convenience CLI entry point — `re-mcp-ida` is equivalent to `re-mcp --backend ida` (the `ida-mcp` alias package also points here) |
+| `_cli.py` | Convenience CLI entry point — `re-mcp-ida` is equivalent to `re-mcp --backend ida` |
 
 ### `re-mcp-ghidra` modules (`packages/re-mcp-ghidra/src/re_mcp_ghidra/`)
 

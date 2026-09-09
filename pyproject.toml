@@ -27,21 +27,18 @@ members = [
     "packages/re-mcp-core",
     "packages/re-mcp-ida",
     "packages/re-mcp-ghidra",
-    "packages/ida-mcp",
 ]
 
 [tool.uv.sources]
 re-mcp-core = { workspace = true }
 re-mcp-ida = { workspace = true }
 re-mcp-ghidra = { workspace = true }
-ida-mcp = { workspace = true }
 
 [dependency-groups]
 dev = [
     "re-mcp-core",
     "re-mcp-ida",
     "re-mcp-ghidra",
-    "ida-mcp",
     "jsonschema>=4.20,<5",
     "pre-commit>=4.5,<5",
     "pytest>=9.0,<10",

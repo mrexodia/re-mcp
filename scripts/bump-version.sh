@@ -17,7 +17,6 @@ if [ $# -eq 0 ]; then
     uv version --package re-mcp-core
     uv version --package re-mcp-ida
     uv version --package re-mcp-ghidra
-    uv version --package ida-mcp
     exit 1
 fi
 
@@ -25,4 +24,3 @@ uv version "$@"
 uv version --package re-mcp-core "$@"
 uv version --package re-mcp-ida "$@"
 uv version --package re-mcp-ghidra "$@"
-uv version --package ida-mcp "$@"

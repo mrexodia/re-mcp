@@ -10,7 +10,6 @@ resolution-markers = [
 
 [manifest]
 members = [
-    "ida-mcp",
     "re-mcp",
     "re-mcp-core",
     "re-mcp-ghidra",
@@ -459,17 +458,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/0f/4c/751061ffa58615a32
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/fd/6668e5aec43ab844de6fc74927e155a3b37bf40d7c3790e49fc0406b6578/httpx_sse-0.4.3-py3-none-any.whl", hash = "sha256:0ac1c9fe3c0afad2e0ebb25a934a59f4c7823b60792691f779fad2c5568830fc", size = 8960, upload-time = "2025-10-10T21:48:21.158Z" },
 ]
-
-[[package]]
-name = "ida-mcp"
-version = "3.0.4.dev1"
-source = { editable = "packages/ida-mcp" }
-dependencies = [
-    { name = "re-mcp-ida" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "re-mcp-ida", editable = "packages/re-mcp-ida" }]
 
 [[package]]
 name = "identify"
@@ -1165,7 +1153,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "ida-mcp" },
     { name = "jsonschema" },
     { name = "pre-commit" },
     { name = "pytest" },
@@ -1185,7 +1172,6 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "ida-mcp", editable = "packages/ida-mcp" },
     { name = "jsonschema", specifier = ">=4.20,<5" },
     { name = "pre-commit", specifier = ">=4.5,<5" },
     { name = "pytest", specifier = ">=9.0,<10" },
@@ -1434,8 +1420,8 @@ name = "secretstorage"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cryptography", marker = "sys_platform != 'win32'" },
-    { name = "jeepney", marker = "sys_platform != 'win32'" },
+    { name = "cryptography" },
+    { name = "jeepney" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/1c/03/e834bcd866f2f8a49a85eaff47340affa3bfa391ee9912a952a1faa68c7b/secretstorage-3.5.0.tar.gz", hash = "sha256:f04b8e4689cbce351744d5537bf6b1329c6fc68f91fa666f60a380edddcd11be", size = 19884, upload-time = "2025-11-23T19:02:53.191Z" }
 wheels = [
